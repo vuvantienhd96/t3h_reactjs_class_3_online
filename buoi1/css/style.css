@@ -1,0 +1,74 @@
+/* extelnal css */
+.header {
+    height: 150px;
+    width: 800px;
+    background-color: gray;
+}
+
+h2 {
+    /* css here */
+}
+
+.title {
+    /* css here */
+}
+
+.header h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 55px;
+}
+
+/* example 2 */
+.header2 {
+    height: 150px;
+    width: 800px;
+    background-color: rgb(87, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 h2 {
+    color: white;
+    font-size: 36px;
+}
+
+.main {
+    height: 450px;
+    width: 800px;
+    background-color: rgb(122, 81, 81);
+    display: flex;
+}
+
+.main .content-left {
+    background-color: white;
+    height: 100%;
+    width: 30%;
+}
+
+.main .content-right {
+    background-color: goldenrod;
+    height: 100%;
+    width: 70%;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.content-info{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.footer {
+    height: 150px;
+    width: 800px;
+    background-color: gray;
+}
