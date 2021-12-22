@@ -1,0 +1,179 @@
+/* extelnal css */
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+    background-image: url("../img/sample.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    /* css here */
+}
+
+.title {
+    /* css here */
+}
+
+.header h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 55px;
+}
+
+/* example 2 */
+.header2 {
+    height: auto;
+    width: 100%;
+    background-color: rgb(87, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header2 .banner-img, .header2 div{
+    width: 100%;
+    height: 100%;
+}
+
+.header2 div {
+    position: relative;
+}
+.header2 .title {
+    position: absolute;
+    z-index: 0;
+    top: 35%;
+    left: 40%;
+}
+
+.header2 h2 {
+    color: white;
+    font-size: 36px;
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    background-color: rgb(122, 81, 81);
+    display: flex;
+}
+
+.main .content-left {
+    background-color: #ece0e0;
+    height: auto;
+    width: 30%;
+}
+
+.main .content-right {
+    background-color: goldenrod;
+    height: 100%;
+    width: 70%;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.content-info{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.content-info h2 {
+    color: black;
+}
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: gray;
+}
+
+.info_detail { 
+    display: flex;
+}
+
+.info_detail p {
+    padding: 1rem;
+}
+.info_detail .img-round{
+    border-radius: 2rem;
+}
+
+/* responsive */
+.content__body {
+    width: 44%;
+    margin: 0 auto;
+}
+
+.content-left a:hover {
+    font-weight: bold;
+    color: black;
+    text-decoration: initial;
+}
+
+@media screen and (max-width: 1024px) {
+    .content__body {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .content__body {
+        width: 100%;
+        margin: 0;
+    }
+    .info_detail { 
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info_detail img {
+        width: 80%;
+        padding-left: 3rem;
+        height: 200px;
+    }
+    .info_detail .img-round {
+        border-radius: 0%;
+    }
+    
+}
+
+ /* mobile */
+ @media screen and (max-width: 414px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .main .content-left, .main .content-right {
+        width: 100%;
+    }
+    .main .content-left ul {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-around;
+    }
+    .main a {
+        text-decoration: initial;
+    }
+    .info_detail img, .info_detail p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .header2 .title {
+        top: 0;
+        left: 27%;
+    }
+
+}
